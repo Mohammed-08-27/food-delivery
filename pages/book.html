@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al hoot...</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../css/index.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- bootstrap 5 -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- starting the header -->
+  <header class="bg-white">
+    <!-- start topnav -->
+    <section class="annoncement bg-dark-gray container-fluid">
+      <div class="container px-0 px-sm-2">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-8 d-flex  align-items-center gap-2 gap-sm-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <img class="d-none d-sm-block" src="../media/image-1/phone-icon.svg" alt="phone-svg" />
+              <p class='fc-light-white ms-sm-3'>(414) 857 - 0107</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <img class="d-none d-sm-block" src="../media/image-1/mail-icon.svg" alt="email-icon" />
+              <p class='fc-light-white ms-sm-3 text-capitalize'>yummy@bistrobliss</p>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end gap-1 gap-sm-2">
+            <a href="https://www.x.com" target="_blank" class=" social-icon">
+              <img src="../media/image-1/x-social.svg" alt="twitter-social" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class=" social-icon">
+              <img src="../media/image-1/fb-social.svg" alt="fb-social" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class=" social-icon">
+              <img src="../media/image-1/insta-social.svg" alt="insta-social" />
+            </a>
+            <a href="https://www.github.com" target="_blank" class=" social-icon">
+              <img src="../media/image-1/github-social.svg" alt="github-social" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end topnav -->
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-md pb-0">
+      <div class="container-lg p-0  px-2">
+        <div class="navbar-brand d-flex align-items-start me-5">
+          <img src="../media/image-1/desktop-logo.svg" alt="logo-img" style="max-width:clamp(42px, 5vw, 55px)" />
+          <p class='fs-42 ff-playfair fst-italic text-capitalize ms-2'>bistro bliss</p>
+        </div>
+        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
+          data-bs-target="#nav-toggle-top" aria-controls="nav-toggle-top" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between pb-4 pb-md-0" id="nav-toggle-top">
+          <ul class="navbar-nav align-items-start mb-2 mb-lg-0 gap-2 p-4 p-md-auto z-index-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages.html">pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+          </ul>
+          <a class="custom-btn ms-4" aria-current="page" href="./book.html">book a table</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ending the header -->
+  <!-- starting the main-->
+  <main class="main-booking bg-light-white">
+    <div class="container pt-5">
+      <div class="row justify-content-center p-lg-5">
+        <div class="col-lg-8">
+          <h1 class="title title-100 ">Book A Table</h1>
+          <p class="fs-18 text-center p-2  p-lg-5" style="color: #495460;">
+            We consider all the drivers of change gives you the components you need to change to create a truly
+            happens.
+          </p>
+        </div>
+        <form class="row col-lg-9 g-4 bg-white p-4 pb-5  rounded-4 shadow-sm mx-auto">
+          <div class="col-sm-6 d-grid gap-2">
+            <label for="res-date" class="text-capitalize fw-bold">date</label>
+            <input type="date" name="res-date" id="res-date" onclick="this.showPicker()">
+          </div>
+          <div class="col-sm-6 d-grid gap-2">
+            <label for="res-time" class="capital fw-bold">time</label>
+            <input type="time" name="res-time" id="res-time" onclick="this.showPicker()">
+          </div>
+          <div class="col-sm-6 d-grid gap-2">
+            <label for="name" class="fw-bold text-capitalize">name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="col-6 d-grid gap-2">
+            <label for="tel" class="text-capitalize fw-bold">Phone</label>
+            <input type="tel" name="tel" id="tel" placeholder="x-xxx-xxx-xxxx" required>
+          </div>
+          <div class="d-grid gap-2">
+            <label for="firstname" class="text-capitalize fw-bold">Total person</label>
+            <select class="select-form" name="person" id="person" required>
+              <option value="1">1 person</option>
+              <option value="2">2 persons</option>
+              <option value="3">3 persons</option>
+              <option value="4">4 persons</option>
+              <option value="5">5 persons</option>
+            </select>
+          </div>
+          <input type="submit" value="book a table" class="custom-btn custom-red-btn">
+        </form>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30455.827177481384!2d-74.12509557435206!3d40.85590134006715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f8da221c83ad%3A0x84d90826f6e62010!2sBowlero%20Wallington!5e0!3m2!1sfr!2sma!4v1726144652053!5m2!1sfr!2sma"
+      width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+  <!-- ending the main -->
+  <!-- starting footer -->
+  <footer class="footer container-fluid bg-dark-gray">
+    <div class="container pt-5 pb-5">
+      <!-- stating the logo and text footer plus social media -->
+      <div class="row pt-5 pb-5">
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center justify-content-lg-start fst-italic "
+            style="margin-bottom: 30px !important;">
+            <img src="../media/image-1/japanese-food.svg" alt="japanese-food">
+            <p class="title fc-white fs-32 ms-2 fw-medium">Bistro Bliss</p>
+          </div>
+          <p class="fc-dark-grayish-yellow text-center text-lg-start">
+            In the new era of technology we look a <br>in the future with certainty and pride to <br>for our company
+            and.
+          </p>
+          <ul class="d-flex gap-2 justify-content-center justify-content-lg-start  ps-0" style="margin-top: 30px;">
+            <li class=" icon footer-icon-social bg-dark-m-red rounded-circle">
+              <a href="https://www.x.com" target="_blank">
+                <img src="../media/image-1/x-social.svg" alt="twitter-social" />
+              </a>
+            </li>
+            <li class="icon footer-icon-social bg-dark-m-red rounded-circle">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="../media/image-1/fb-social.svg" alt="fb-social" />
+              </a>
+            </li>
+            <li class="icon footer-icon-social bg-dark-m-red rounded-circle">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="../media/image-1/insta-social.svg" alt="insta-social" />
+              </a>
+            </li>
+            <li class="icon footer-icon-social bg-dark-m-red rounded-circle">
+              <a href="https://www.github.com" target="_blank">
+                <img src="../media/image-1/github-social.svg" alt="github-social" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ending the logo and text footer plus social media -->
+        <!-- starting footer links -->
+        <div class="col-lg-4 d-flex p-4 justify-content-center">
+          <div class="text-capitalize me-5">
+            <h3 class="fs-16 fc-white fw-bold">pages</h3>
+            <ul class="d-grid gap-4 ps-0" style="margin-top: 40px;">
+              <li class="fc-light-grayish-green"><a src="../index.html">Home</a></li>
+              <li class="fc-light-grayish-green"><a src="./About.html">About</a></li>
+              <li class="fc-light-grayish-green"><a src="./Menu.html">Menu</a></li>
+              <li class="fc-light-grayish-green"><a src="./Pricing.html">Pricing</a></li>
+              <li class="fc-light-grayish-green"><a src="./contact.html">blog</a></li>
+              <li class="fc-light-grayish-green"><a src="./contact.html">contact</a></li>
+              <li class="fc-light-grayish-green"><a src="./contact.html"></a></li>
+            </ul>
+          </div>
+          <div class="text-capitalize ms-5">
+            <h3 class="fs-16 fc-white fw-bold">Utility Pages</h3>
+            <ul class="d-grid gap-4 ps-0" style="margin-top: 40px;">
+              <li class="fc-light-grayish-green">Start Here</li>
+              <li class="fc-light-grayish-green">Styleguide</li>
+              <li class="fc-light-grayish-green">Password Protected</li>
+              <li class="fc-light-grayish-green">404 Not Found</li>
+              <li class="fc-light-grayish-green">Licenses</li>
+              <li class="fc-light-grayish-green">Changelog</li>
+              <li class="fc-light-grayish-green">View More</li>
+            </ul>
+          </div>
+        </div>
+        <!-- ending footer links -->
+        <!-- starting footer ingstagram links -->
+        <div class="col-lg-4 p-4">
+          <h3 class="fs-16 fc-white fw-bold">Follow Us On Instagram</h3>
+          <ul class="row row-cols-2  row-gap-4 ps-0" style="margin-top:40px;">
+            <li class="col-6 ">
+              <img class="rounded-4" src="../media/image-1/Mask group (11).jpg" alt="mask-11-img">
+            </li>
+            <li class="col-6 ">
+              <img class="rounded-4" src="../media/image-1/Mask group (22).jpg" alt="mask-22-img">
+            </li>
+            <li class="col-6 ">
+              <img class="rounded-4" src="../media/image-1/Mask group (7).jpg" alt="mask-11-img">
+            </li>
+            <li class="col-6 ">
+              <img class="rounded-4" src="../media/image-1/Mask group (8).jpg" alt="mask-11-img">
+            </li>
+          </ul>
+        </div>
+        <!-- ending footer instagram links -->
+      </div>
+    </div>
+  </footer>
+  <!-- ending footer -->
+  <!-- script custom -->
+  <script src="../js/script.js"></script>
+  <script src="../js/reserve.js"></script>
+  <!-- script fontawesome -->
+  <script src="../js/all.min.js"></script>
+  <!-- script bootstrap -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
